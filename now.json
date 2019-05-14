@@ -1,5 +1,13 @@
 {
 	"version": 2,
 	"name": "nextjs",
-	"builds": [{ "src": "next.config.js", "use": "@now/next" }]
+	"builds": [{ "src": "next.config.js", "use": "@now/next" }],
+	"env": {
+		"GITHUB_TOKEN": "@github_token"
+	},
+	"build": {
+		"env": {
+			"GITHUB_TOKEN": "@github_token"
+		}
+	}
 }
